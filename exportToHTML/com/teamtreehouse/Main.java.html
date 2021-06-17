@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.teamtreehouse</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">java.util.ArrayList</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.Arrays</span><span class="s0">;</span>
+
+
+<span class="s0">public class </span><span class="s1">Main {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Vocalist miles = </span><span class="s0">new </span><span class="s1">TrumpetPlayer(</span><span class="s2">&quot;Miles Davis&quot;</span><span class="s0">, </span><span class="s2">&quot;USA&quot;</span><span class="s0">, </span><span class="s2">&quot;jazz&quot;</span><span class="s0">, </span><span class="s2">&quot;1950s&quot;</span><span class="s0">, </span><span class="s2">&quot;brass&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Vocalist gary = </span><span class="s0">new </span><span class="s1">Guitarist(</span><span class="s2">&quot;Gary Clark Jr&quot;</span><span class="s0">, </span><span class="s2">&quot;USA&quot;</span><span class="s0">, </span><span class="s2">&quot;blues&quot;</span><span class="s0">, </span><span class="s2">&quot;2010s&quot;</span><span class="s0">, </span><span class="s3">6</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Vocalist louis = </span><span class="s0">new </span><span class="s1">TrumpetPlayer(</span><span class="s2">&quot;Louis Armstrong&quot;</span><span class="s0">, </span><span class="s2">&quot;USA&quot;</span><span class="s0">, </span><span class="s2">&quot;blues&quot;</span><span class="s0">, </span><span class="s2">&quot;1920s&quot;</span><span class="s0">, </span><span class="s2">&quot;brass&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Vocalist jimi = </span><span class="s0">new </span><span class="s1">Guitarist(</span><span class="s2">&quot;Jimi Hendrix&quot;</span><span class="s0">, </span><span class="s2">&quot;USA&quot;</span><span class="s0">, </span><span class="s2">&quot;rock&quot;</span><span class="s0">, </span><span class="s2">&quot;1960s&quot;</span><span class="s0">, </span><span class="s3">5</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Vocalist giveon = </span><span class="s0">new </span><span class="s1">Vocalist(</span><span class="s2">&quot;Giveon&quot;</span><span class="s0">, </span><span class="s2">&quot;USA&quot;</span><span class="s0">, </span><span class="s2">&quot;R&amp;B&quot;</span><span class="s0">, </span><span class="s2">&quot;2010s&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Vocalist jhene = </span><span class="s0">new </span><span class="s1">Vocalist(</span><span class="s2">&quot;Jhene Aiko&quot;</span><span class="s0">, </span><span class="s2">&quot;USA&quot;</span><span class="s0">, </span><span class="s2">&quot;R&amp;B&quot;</span><span class="s0">, </span><span class="s2">&quot;2010s&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+
+        <span class="s1">ArrayList&lt;Song&gt; library = </span><span class="s0">new </span><span class="s1">ArrayList&lt;&gt;()</span><span class="s0">;   </span><span class="s4">// Create our library</span>
+        <span class="s1">library.add(</span><span class="s0">new </span><span class="s1">Song(</span><span class="s2">&quot;World We Created&quot;</span><span class="s0">, </span><span class="s2">&quot;Giveon&quot;</span><span class="s0">, </span><span class="s2">&quot;Shower&quot;</span><span class="s0">, </span><span class="s2">&quot;https://www.youtube.com/watch?v=n30BHPW0w3Y&quot;</span><span class="s1">))</span><span class="s0">;</span>
+        <span class="s1">library.add(</span><span class="s0">new </span><span class="s1">Song(</span><span class="s2">&quot;Moments&quot;</span><span class="s0">, </span><span class="s2">&quot;Jhene Aiko&quot;</span><span class="s0">, </span><span class="s2">&quot;Car&quot;</span><span class="s0">, </span><span class="s2">&quot;https://www.youtube.com/watch?v=4XlxoQoiYYg&quot;</span><span class="s1">))</span><span class="s0">;</span>
+        <span class="s1">library.add(</span><span class="s0">new </span><span class="s1">Song(</span><span class="s2">&quot;So What&quot;</span><span class="s0">, </span><span class="s2">&quot;Miles Davis&quot;</span><span class="s0">, </span><span class="s2">&quot;Jazz&quot;</span><span class="s0">, </span><span class="s2">&quot;https://www.youtube.com/watch?v=zqNTltOGh5c&quot;</span><span class="s1">))</span><span class="s0">;</span>
+        <span class="s1">library.add(</span><span class="s0">new </span><span class="s1">Song(</span><span class="s2">&quot;Come Together&quot;</span><span class="s0">, </span><span class="s2">&quot;Gary Clark Jr&quot;</span><span class="s0">, </span><span class="s2">&quot;Blues&quot;</span><span class="s0">, </span><span class="s2">&quot;https://www.youtube.com/watch?v=9riFu5CQnBw&quot;</span><span class="s1">))</span><span class="s0">;</span>
+        <span class="s1">library.add(</span><span class="s0">new </span><span class="s1">Song(</span><span class="s2">&quot;When The Saints Go Marching In&quot;</span><span class="s0">, </span><span class="s2">&quot;Louis Armstrong&quot;</span><span class="s0">, </span><span class="s2">&quot;Blues&quot;</span><span class="s0">, </span><span class="s2">&quot;https://www.youtube.com/watch?v=wyLjbMBpGDA&quot;</span><span class="s1">))</span><span class="s0">;</span>
+        <span class="s1">library.add(</span><span class="s0">new </span><span class="s1">Song(</span><span class="s2">&quot;Purple Haze&quot;</span><span class="s0">, </span><span class="s2">&quot;Jimi Hendrix&quot;</span><span class="s0">, </span><span class="s2">&quot;Rock&quot;</span><span class="s0">, </span><span class="s2">&quot;https://www.youtube.com/watch?v=WGoDaYjdfSg&quot;</span><span class="s1">))</span><span class="s0">;</span>
+
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">i = </span><span class="s3">0</span><span class="s0">; </span><span class="s1">i &lt; library.size()</span><span class="s0">; </span><span class="s1">i++) {</span>
+            <span class="s1">library.get(i).show()</span><span class="s0">;</span>
+            <span class="s4">//System.out.println(i);</span>
+        <span class="s1">}</span>
+
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+</pre>
+</body>
+</html>
